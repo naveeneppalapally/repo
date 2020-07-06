@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>Survey form</title>
+<style>
+  body
+  {
+  	background-color:'pink';
+  } 
+	h1{
+ 		font-weight: bold; 
+ 		color: black;   
+ 		text-align: center;
+ 		font-family: Arial; 
+		 font-size: 30px;     
+ 		font-style: normal;  
+	}
+	#widths
+	{
+ 		 width:1250px;
+  		height: 580px;
+  		margin-top:-40px; 
+ 		margin-left:50px;
+	}
+</style>
+</head>
+<body bgcolor='pink'>
+	<h1>Survey Form</h1>
+	<form>
+	<table bgcolor="white" id="widths" cellpadding = "15"  >
+	<tr>
+		<td align="right">*Name:</td>
+		<td><input type="text"  id="name" placeholder="Enter your name" /></td>
+	</tr>
+	<tr>
+		<td align="right" id="email"> * Email:</td>
+		<td><input type="text"  placeholder="Enter your Email"/></td>
+	</tr>
+	<tr>
+		<td align="right" id="age"> * Age:</td>
+		<td><input type="number" placeholder="Age"/></td>
+	</tr>
+	<tr>
+		<td align="right">Which option best describes your current role</td>
+		<td>
+ 			 <select name="current_role" id="current_role">
+				<option >Student</option>
+				<option> HR </option>
+				<option> SE </option>
+			</select>
+		</td>
+	</tr>
+	<br>
+	<tr>
+		<td align="right">* How likely is that you would recommend a friend</td>
+		<td>
+			<input type="radio" name="friend_rec"  id="friend_rec"/> Definetely <br>
+			<input type="radio" name="friend_rec" id="friend_rec" />Maybe<br>
+			<input type="radio" name="friend_rec" id="friend_rec"/>Not sure
+		</td>
+	</tr>
+	<br>
+	<tr>
+ 		 <td align="right">What do you like most in</td>
+	<td>
+		<select name="most_like" id="most_like">
+		<option >Select an option</option>
+		<option>Sincerity</option>
+		<option>Discipline</option>
+		<option>
+		</select>
+	</td>
+	<tr>
+	<td align="right">Things that should be improved in the future<br>
+	(Check all that apply):</td>
+	<td>
+	<br/>
+	<input type="checkbox"  id="improv_in_fut"/>
+	Front-end Projects
+	<br>
+	<input type="checkbox" id="improv_in_fut" />
+	Back-end Projects
+	<br/>
+	<input type="checkbox" id="improv_in_fut"/>
+	Data Visualization<br/>
+	</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<input type="submit" id="Submit">
+		<input type="reset" id="Reset">
+	</td>
+	</tr>
+	</table>
+	</form>
+</body>
+</html>
